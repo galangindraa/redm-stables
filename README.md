@@ -13,4 +13,6 @@ List of Horses can be found here: https://www.rdr2mods.com/wiki/ped-search/?s=ho
 # Credits
 
 https://github.com/Luminous-Roleplay/LRP_Stable
+
+
 https://github.com/qbcore-redm-framework/qbr-stable 
