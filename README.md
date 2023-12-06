@@ -1,2 +1,2 @@
 # redm-stables-RPX
- RSG-Core conversion for RPX Framework
+ QBR-Core conversion for RPX Framework
