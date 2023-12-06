@@ -70,7 +70,7 @@ local function handleExports(name)
                 },
                 {
                     icon = "fas fa-horse-head",
-                    label = "Delete your horse",
+                    label = "Sell your horse",
                     targeticon = "fas fa-eye",
                     action = function()
                         TriggerEvent("rpx-stables:client:MenuDel")
@@ -263,7 +263,7 @@ RegisterNetEvent('rpx-stables:client:menu', function()
         for _, v in pairs(horses) do
             GetHorse[#GetHorse + 1] = {
                 title = v.name,
-                icon = "fa-solid fa-circle-user",
+                icon = 'fa-solid fa-horse',
                 event = "rpx-stables:client:SpawnHorse",
                 args = { player = v, active = 1 }
             }
@@ -291,7 +291,7 @@ RegisterNetEvent('rpx-stables:client:MenuDel', function()
                 local horses = horses[i]
                 options[#options + 1] = {
                     title = horses.name,
-                    description = 'Dell Horse',
+                    description = 'Sell Horse',
                     icon = 'fa-solid fa-horse',
                     serverEvent = 'rpx-stables:server:DelHores',
                     args = { horseid = horses.id },
@@ -300,7 +300,7 @@ RegisterNetEvent('rpx-stables:client:MenuDel', function()
             end
             lib.registerContext({
                 id = 'sellhorse_menu',  -- Corrected the context ID here
-                title = 'Dell Horse',
+                title = 'Sell Horse',
                 position = 'top-right',
                 options = options
             })
